@@ -1,4 +1,6 @@
 // Getting the required elements from the DOM
+// TODO: Keyboard input, Backslash thing
+
 const calculator = document.getElementById('calculator');
 const screen = document.getElementById('screen');
 const allButtonNodes = calculator.querySelectorAll('button');
@@ -66,6 +68,14 @@ function startCalculator() {
 				}
 			}
 
+			if (button.id === 'clear') {
+				firstNumber = '';
+				secondNumber = '';
+				displayValue = '';
+				operator = '';
+				screen.textContent = '0';
+			}
+
 			switch (button.id) {
 				case 'zero':
 				case 'one':
@@ -94,13 +104,10 @@ function startCalculator() {
 					if (firstNumber.length > 0) {
 						operator = button.id;
 						if (!displayValue == '0') {
-							console.log('changed');
 							displayValue = '';
 						}
 					}
 			}
-
-			console.log(`first ${firstNumber} second${secondNumber} operator${operator} display value ${displayValue}`)
 
 		});
 	});
