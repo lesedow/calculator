@@ -1,4 +1,4 @@
 # The Odin Project
 # Calculator
 
-Live Preview: Soon
+Live Preview: https://lesedow.github.io/calculator/
