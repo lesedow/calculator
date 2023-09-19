@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-container {
+    background-color: black;
+    padding: 24px;
+}
+
+.calculator-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    width: 362px;
+}
+
+.calculator-buttons button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.calculator-buttons button[data-number="0"] {
+    flex: 1;
+    border-radius: 50px;
+}
+
+.calculator-buttons button[data-operator] {
+    background-color: #f7a202;
+    color: white;
+}
+
+.display {
+    color: white;
+    width: 362px;
+    text-align: right;
+    padding: 14px 24px;
+    font-size: 32px;
+}
+
+button#clear,
+button#sign,
+button#percent {
+    background-color: #c7c4bf;
+}
+
+button#comma,
+button[data-number] {
+    background-color: #242323;
+    color: white;
+}
+
