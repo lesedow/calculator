@@ -39,12 +39,12 @@ body {
     cursor: pointer;
 }
 
-.calculator-buttons button[data-number="0"] {
+.calculator-buttons .zero {
     flex: 1;
     border-radius: 50px;
 }
 
-.calculator-buttons button[data-operator] {
+.operator {
     background-color: #f7a202;
     color: white;
 }
@@ -57,14 +57,11 @@ body {
     font-size: 32px;
 }
 
-button#clear,
-button#sign,
-button#percent {
+.special {
     background-color: #c7c4bf;
 }
 
-button#comma,
-button[data-number] {
+.number {
     background-color: #242323;
     color: white;
 }
