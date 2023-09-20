@@ -29,6 +29,7 @@ body {
     flex-wrap: wrap;
     gap: 14px;
     width: 362px;
+    user-select: none;
 }
 
 .calculator-buttons button {
@@ -39,8 +40,10 @@ body {
     cursor: pointer;
 }
 
-.calculator-buttons .zero {
-    flex: 1;
+.calculator-buttons .zero,
+.calculator-buttons .divide  {
+    flex: auto;
+    width: 160px;
     border-radius: 50px;
 }
 
